@@ -1,0 +1,138 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  background-color: #fff;
+}
+
+.text-secondary {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.text-center {
+  text-align: center;
+}
+
+h2 {
+  margin: 0;
+  font-size: 48px;
+}
+
+h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+hr {
+  width: 250px;
+  padding: 0;
+}
+
+#cover,
+#footer {
+  color: white;
+  background-image: -webkit-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
+}
+
+#cover,
+#about,
+#photos,
+#services,
+#reviews,
+#contact {
+  min-height: 50vh;
+  padding: 10vh 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#footer {
+  min-height: 10vh;
+  padding: 5vh 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#photos,
+#reviews {
+  background-color: #f9f9ff;
+}
+
+.photos-content,
+.reviews-content,
+.services-content,
+.contact-content,
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* .photos-content {
+  border: 1px solid rgba(0, 0, 0, .125);
+} */
+
+.flex-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.flex-box > * {
+  margin: 10px 30px;
+}
+
+.about-featured-img {
+  width: 800px;
+  height: auto;
+}
+
+@media (max-width: 900px) {
+  .about-featured-img {
+    width: 100%;
+  }
+}
+
+.about-text {
+  width: 300px;
+}
+
+.about-text > * {
+  padding: 2px 0;
+}
+
+.photos-section-img {
+  height: 450px;
+  width: 700px;
+}
+
+@media (max-width: 800px) {
+  .photos-section-img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+.review-text {
+  width: 300px;
+  /* border: 1px solid rgba(0, 0, 0, .125); */
+}
+
+.review-text > * {
+  margin: 20px 0;
+}
+
+.drawer a {
+  text-decoration-line: none;
+  color: black;
+}
