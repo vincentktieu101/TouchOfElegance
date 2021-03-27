@@ -3,18 +3,22 @@ import { makeStyles } from "@material-ui/core/styles"
 import AppBar from "@material-ui/core/AppBar"
 import Toolbar from "@material-ui/core/Toolbar"
 import Typography from "@material-ui/core/Typography"
-import Button from "@material-ui/core/Button"
 import IconButton from "@material-ui/core/IconButton"
 import MenuIcon from "@material-ui/icons/Menu"
 
-import Drawer from '@material-ui/core/Drawer';
-import Divider from '@material-ui/core/Divider';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
+import Drawer from "@material-ui/core/Drawer"
+import Divider from "@material-ui/core/Divider"
+import List from "@material-ui/core/List"
+import ListItem from "@material-ui/core/ListItem"
+import ListItemIcon from "@material-ui/core/ListItemIcon"
+import ListItemText from "@material-ui/core/ListItemText"
+import HomeIcon from "@material-ui/icons/Home"
+import MenuBookIcon from "@material-ui/icons/MenuBook"
+import PhotoLibraryIcon from "@material-ui/icons/PhotoLibrary"
+import RoomServiceIcon from "@material-ui/icons/RoomService"
+import GradeIcon from "@material-ui/icons/Grade"
+import MessageIcon from "@material-ui/icons/Message"
+import DirectionsIcon from "@material-ui/icons/Directions"
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -30,7 +34,7 @@ const useStyles = makeStyles(theme => ({
     width: 250,
   },
   fullList: {
-    width: 'auto',
+    width: "auto",
   },
 }))
 
@@ -38,82 +42,82 @@ export default function ButtonAppBar() {
   const classes = useStyles()
   const [state, setState] = useState({
     left: false,
-  });
+  })
 
-  const toggleDrawer = (anchor, open) => (event) => {
+  const toggleDrawer = (anchor, open) => event => {
     if (
       event.type === "keydown" &&
       (event.key === "Tab" || event.key === "Shift")
     ) {
-      return;
+      return
     }
 
-    setState({ ...state, [anchor]: open });
-  };
+    setState({ ...state, [anchor]: open })
+  }
 
   const list = () => (
     <div
       role="presentation"
-      onClick={toggleDrawer('left', false)}
-      onKeyDown={toggleDrawer('left', false)}
+      onClick={toggleDrawer("left", false)}
+      onKeyDown={toggleDrawer("left", false)}
     >
       <List>
-        {/* {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-          <ListItem button key={text}>
+        <a href="#cover">
+          <ListItem button key={"Home"}>
             <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+              <HomeIcon />
             </ListItemIcon>
-            <ListItemText primary={text} />
+            <ListItemText>Home</ListItemText>
           </ListItem>
-        ))} */}
+        </a>
         <a href="#about">
-          <ListItem button key={'About'}>
+          <ListItem button key={"About"}>
             <ListItemIcon>
-              <InboxIcon />
+              <MenuBookIcon />
             </ListItemIcon>
             <ListItemText>About</ListItemText>
           </ListItem>
         </a>
         <a href="#photos">
-          <ListItem button key={'Photos'}>
+          <ListItem button key={"Photos"}>
             <ListItemIcon>
-              <InboxIcon />
+              <PhotoLibraryIcon />
             </ListItemIcon>
             <ListItemText>Photos</ListItemText>
           </ListItem>
         </a>
         <a href="#services">
-          <ListItem button key={'Services'}>
+          <ListItem button key={"Services"}>
             <ListItemIcon>
-              <InboxIcon />
+              <RoomServiceIcon />
             </ListItemIcon>
             <ListItemText>Services</ListItemText>
           </ListItem>
         </a>
         <a href="#reviews">
-          <ListItem button key={'Reviews'}>
+          <ListItem button key={"Reviews"}>
             <ListItemIcon>
-              <InboxIcon />
+              <GradeIcon />
             </ListItemIcon>
             <ListItemText>Reviews</ListItemText>
           </ListItem>
         </a>
         <a href="#contact">
-          <ListItem button key={'Contact Us'}>
+          <ListItem button key={"Contact Us"}>
             <ListItemIcon>
-              <InboxIcon />
+              <MessageIcon />
             </ListItemIcon>
             <ListItemText>Contact Us</ListItemText>
           </ListItem>
           <Divider />
         </a>
-        </List>
+      </List>
     </div>
-  );
+  )
 
   return (
     <div className={classes.root}>
-      <AppBar position="fixed">
+      <AppBar position="fixed" style={{ backgroundColor: "white" }}>
         <Toolbar>
           <IconButton
             edge="start"
@@ -122,15 +126,35 @@ export default function ButtonAppBar() {
             aria-label="menu"
             onClick={toggleDrawer("left", true)}
           >
-            <MenuIcon edge="start" className={classes.menuButton} color="inherit" aria-label="menu" />
+            <MenuIcon className="main-color" />
           </IconButton>
-          <Drawer anchor={'left'} open={state['left']} onClose={toggleDrawer('left', false)} className="drawer">
-            {list('left')}
+          <Drawer
+            anchor={"left"}
+            open={state["left"]}
+            onClose={toggleDrawer("left", false)}
+            className="drawer"
+          >
+            {list("left")}
           </Drawer>
-          <Typography variant="h6" className={classes.title}>
-            Touch of Elegance
+          <Typography component={"span"} variant="h6" className={classes.title}>
+            <a
+              href="#cover"
+              className="main-color"
+              style={{ textDecoration: "none", fontFamily: "Oswald" }}
+            >
+              TOUCH OF ELEGANCE
+            </a>
           </Typography>
           {/* <Button color="inherit">Login</Button> */}
+          <a
+            href="https://www.google.com/maps/place/Touch+of+Elegance+nails+%26+Spa/@34.048895,-118.4363709,18.32z/data=!4m5!3m4!1s0x80c2bb9cebfea351:0x60ab60d5b27c00de!8m2!3d34.0489753!4d-118.4356852"
+            target="_blank"
+            rel="noreferrer"
+            style={{ textDecoration: "none" }}
+            className="main-color"
+          >
+            <DirectionsIcon />
+          </a>
         </Toolbar>
       </AppBar>
     </div>

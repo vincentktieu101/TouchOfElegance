@@ -27,13 +27,16 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div style={{height: "30px"}}></div>
       <div>{children}</div>
       <div id="footer">
         <Container>
           <div className="footer-content">
-            <div>© Touch of Elegance {new Date().getFullYear()}</div>
-            <div><br/></div>
+            <div>
+              <b>© TOUCH OF ELEGANCE {new Date().getFullYear()}</b>
+            </div>
+            <div>
+              <br />
+            </div>
             <div>1846 Westwood Boulevard</div>
             <div>Los Angeles, California 90025</div>
             <div>United States</div>

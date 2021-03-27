@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
@@ -10,6 +12,14 @@ body {
   background-color: #fff;
 }
 
+.main-color {
+  color: #26a11b;
+}
+
+.btn-bg-color {
+  background-color: #0b8100;
+}
+
 .text-secondary {
   color: rgba(0, 0, 0, 0.54);
 }
@@ -19,11 +29,13 @@ body {
 }
 
 h2 {
+  font-family: Oswald;
   margin: 0;
   font-size: 48px;
 }
 
 h4 {
+  font-family: Oswald;
   margin: 0;
   font-size: 16px;
 }
@@ -33,38 +45,53 @@ hr {
   padding: 0;
 }
 
-#cover,
-#footer {
-  color: white;
-  background-image: -webkit-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
+/* 
+<----- MAIN LAYOUT ----->
+*/
+
+.drawer a {
+  text-decoration-line: none;
+  color: black;
 }
 
 #cover,
+#footer {
+  color: white;
+  background-image: -webkit-linear-gradient(0deg, #88da62 0%, #258d4f 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#cover {
+  min-height: 80vh;
+  padding: 10vh 0;
+}
+
+#footer {
+  min-height: 10vh;
+  padding: 5vh 0;
+}
+
 #about,
 #photos,
 #services,
 #reviews,
 #contact {
   min-height: 50vh;
-  padding: 10vh 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#footer {
-  min-height: 10vh;
-  padding: 5vh 0;
+  padding: 7vh 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 #photos,
-#reviews {
+#contact {
   background-color: #f9f9ff;
 }
 
+.cover-content,
+.about-content,
 .photos-content,
 .reviews-content,
 .services-content,
@@ -76,39 +103,38 @@ hr {
   width: 100%;
 }
 
-/* .photos-content {
-  border: 1px solid rgba(0, 0, 0, .125);
-} */
-
-.flex-box {
+.flex-row {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   width: 100%;
 }
 
-.flex-box > * {
-  margin: 10px 30px;
+.flex-col {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+/* 
+<----- INDIVIDUAL SECTIONS ----->
+*/
 
 .about-featured-img {
-  width: 800px;
-  height: auto;
+  width: 880px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .about-featured-img {
     width: 100%;
   }
 }
 
 .about-text {
-  width: 300px;
-}
-
-.about-text > * {
-  padding: 2px 0;
+  line-height: 1.5;
+  color: #3d3d3d;
 }
 
 .photos-section-img {
@@ -123,16 +149,55 @@ hr {
   }
 }
 
+.services-accordian-group {
+  width: 100%;
+}
+
+@media (min-width: 800px) {
+  .services-accordian-group {
+    width: 600px;
+  }
+}
+
+#feature {
+  height: 40vh;
+  background-image: url("https://preview.colorlib.com/theme/knuford/images/bg_3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  z-index: 0;
+}
+
+.feature-overlay {
+  position: absolute;
+  background: -webkit-linear-gradient(0deg, #88da62 0%, #258d4f 100%);
+  opacity: 0.9;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.feature-content {
+  color: white;
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .review-text {
-  width: 300px;
-  /* border: 1px solid rgba(0, 0, 0, .125); */
+  line-height: 1.5;
+  color: #3d3d3d;
+  height: 100%;
 }
 
-.review-text > * {
-  margin: 20px 0;
-}
-
-.drawer a {
-  text-decoration-line: none;
-  color: black;
+@media (min-width: 800px) {
+  .review-text {
+    min-height: 300px;
+  }
 }

@@ -4,6 +4,7 @@ import Cover from "../sections/Cover"
 import About from "../sections/About"
 import Services from "../sections/Services"
 import Photos from "../sections/Photos"
+import Feature from "../sections/Feature"
 import Reviews from "../sections/Reviews"
 import Contact from "../sections/Contact"
 
@@ -16,6 +17,7 @@ const IndexPage = () => (
     <About />
     <Photos />
     <Services />
+    <Feature />
     <Reviews />
     <Contact />
   </Layout>
