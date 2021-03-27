@@ -37,7 +37,7 @@ h2 {
 h4 {
   font-family: Oswald;
   margin: 0;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 hr {
@@ -161,7 +161,7 @@ hr {
 
 #feature {
   height: 40vh;
-  background-image: url("https://preview.colorlib.com/theme/knuford/images/bg_3.jpg");
+  background-image: url("./images/Collins_Nails_Salon_Spa_Photo1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -200,4 +200,23 @@ hr {
   .review-text {
     min-height: 300px;
   }
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+img {
+  transform: rotateY(180deg);
+}
+
+img.appear {
+  transition: transform 1000ms;
+  transform-style: preserve-3d;
+  transform: rotateY(360deg);
 }

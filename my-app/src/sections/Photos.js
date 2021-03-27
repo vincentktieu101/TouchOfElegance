@@ -13,7 +13,7 @@ export default function Photos() {
   return (
     <div id="photos">
       <Container>
-        <div className="photos-content">
+        <div className="photos-content fade-in">
           <h2>PHOTOS</h2>
           <hr />
           <div>
@@ -21,7 +21,7 @@ export default function Photos() {
           </div>
           <Carousel autoPlay={true} swipe={true}>
             {items.map((img, i) => (
-              <img alt="" className="photos-section-img" key={i} src={img} />
+              <img alt="awesome photos of the store" className="photos-section-img" key={i} src={img} style={{height: "400px"}} />
             ))}
           </Carousel>
         </div>

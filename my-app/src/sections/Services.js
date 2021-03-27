@@ -10,7 +10,7 @@ export default function Services() {
   return (
     <div id="services">
       <Container>
-        <div className="services-content">
+        <div className="services-content fade-in">
           <h2>SERVICES</h2>
           <hr />
           <div>
@@ -197,7 +197,7 @@ export function GetAccordians() {
           id={`panel${i}a-header`}
         >
           <Typography component={"span"}>
-            {servicesList[i].title.toUpperCase()}
+            <h4>{servicesList[i].title.toUpperCase()}</h4>
           </Typography>
         </AccordionSummary>
         <AccordionDetails>

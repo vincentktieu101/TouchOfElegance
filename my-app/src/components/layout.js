@@ -11,7 +11,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import Container from "@material-ui/core/Container"
 
 import Header from "./header"
-import "./layout.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -30,10 +29,8 @@ const Layout = ({ children }) => {
       <div>{children}</div>
       <div id="footer">
         <Container>
-          <div className="footer-content">
-            <div>
-              <b>© TOUCH OF ELEGANCE {new Date().getFullYear()}</b>
-            </div>
+          <div className="footer-content fade-in" >
+            <h4>© TOUCH OF ELEGANCE {new Date().getFullYear()}</h4>
             <div>
               <br />
             </div>

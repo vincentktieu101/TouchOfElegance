@@ -13,21 +13,17 @@ export default function Contact() {
   return (
     <div id="contact">
       <Container>
-        <div className="contact-content">
+        <div className="contact-content fade-in">
           <h2>CONTACT US</h2>
           <hr />
           <div>
             <br />
           </div>
           <form>
-            <div style={{ marginBottom: "5px" }}>
-              <b>Call Us</b>
-            </div>
+            <h4>CALL US</h4>
             <div>(310) 481-3917</div>
             <br />
-            <div style={{ marginBottom: "10px" }}>
-              <b>Email Us</b>
-            </div>
+            <h4>EMAIL US</h4>
             <Grid container spacing={1} justify="center" alignItems="center">
               <Grid item xs={12}>
                 <TextField

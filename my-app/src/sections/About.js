@@ -8,7 +8,7 @@ export default function About() {
   return (
     <div id="about">
       <Container>
-        <div className="flex-row">
+        <div className="flex-row fade-in">
           <a
             target="_blank"
             rel="noreferrer"

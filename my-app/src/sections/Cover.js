@@ -5,7 +5,7 @@ export default function Cover() {
   return (
     <div id="cover">
       <Container>
-        <div className="cover-content">
+        <div className="cover-content fade-in">
           <h2>
             TOUCH OF ELEGANCE, NAILS AND SPA{" "}
             <span role="img" aria-label="heart emoji">

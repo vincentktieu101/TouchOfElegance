@@ -6,7 +6,7 @@ export default function Reviews() {
   return (
     <div id="reviews">
       <Container>
-        <div className="reviews-content">
+        <div className="reviews-content fade-in">
           <h2>REVIEWS</h2>
           <hr />
           <div>

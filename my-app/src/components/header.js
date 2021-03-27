@@ -67,7 +67,7 @@ export default function ButtonAppBar() {
             <ListItemIcon>
               <HomeIcon />
             </ListItemIcon>
-            <ListItemText>Home</ListItemText>
+            <ListItemText><h4>HOME</h4></ListItemText>
           </ListItem>
         </a>
         <a href="#about">
@@ -75,7 +75,7 @@ export default function ButtonAppBar() {
             <ListItemIcon>
               <MenuBookIcon />
             </ListItemIcon>
-            <ListItemText>About</ListItemText>
+            <ListItemText><h4>ABOUT</h4></ListItemText>
           </ListItem>
         </a>
         <a href="#photos">
@@ -83,7 +83,7 @@ export default function ButtonAppBar() {
             <ListItemIcon>
               <PhotoLibraryIcon />
             </ListItemIcon>
-            <ListItemText>Photos</ListItemText>
+            <ListItemText><h4>PHOTOS</h4></ListItemText>
           </ListItem>
         </a>
         <a href="#services">
@@ -91,7 +91,7 @@ export default function ButtonAppBar() {
             <ListItemIcon>
               <RoomServiceIcon />
             </ListItemIcon>
-            <ListItemText>Services</ListItemText>
+            <ListItemText><h4>SERVICES</h4></ListItemText>
           </ListItem>
         </a>
         <a href="#reviews">
@@ -99,7 +99,7 @@ export default function ButtonAppBar() {
             <ListItemIcon>
               <GradeIcon />
             </ListItemIcon>
-            <ListItemText>Reviews</ListItemText>
+            <ListItemText><h4>REVIEWS</h4></ListItemText>
           </ListItem>
         </a>
         <a href="#contact">
@@ -107,10 +107,10 @@ export default function ButtonAppBar() {
             <ListItemIcon>
               <MessageIcon />
             </ListItemIcon>
-            <ListItemText>Contact Us</ListItemText>
+            <ListItemText><h4>CONTACT US</h4></ListItemText>
           </ListItem>
-          <Divider />
         </a>
+        <Divider />
       </List>
     </div>
   )
@@ -140,9 +140,9 @@ export default function ButtonAppBar() {
             <a
               href="#cover"
               className="main-color"
-              style={{ textDecoration: "none", fontFamily: "Oswald" }}
+              style={{ textDecoration: "none" }}
             >
-              TOUCH OF ELEGANCE
+              <h4>TOUCH OF ELEGANCE</h4>
             </a>
           </Typography>
           {/* <Button color="inherit">Login</Button> */}
