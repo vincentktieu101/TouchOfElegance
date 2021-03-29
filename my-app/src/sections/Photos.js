@@ -24,6 +24,7 @@ export default function Photos() {
               <img alt="awesome photos of the store" className="photos-section-img" key={i} src={img} style={{height: "400px"}} />
             ))}
           </Carousel>
+          <br />
         </div>
       </Container>
     </div>

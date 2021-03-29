@@ -14,9 +14,9 @@ import SEO from "../components/seo"
 function IndexPage() {
 
   useEffect(() => {
-    const faders = [...document.querySelectorAll('.fade-in')].concat([...document.querySelectorAll('img')])
+    const faders = document.querySelectorAll('.fade-in')
     const appearOptions = {
-      threshold: 0.5
+      threshold: 0.4
     }
     const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
       entries.forEach(entry => {

@@ -2,7 +2,13 @@ module.exports = {
   pathPrefix: "/",
   siteMetadata: {
     title: `Touch Of Elegance`,
-    description: `The best place to get your nails done in Westwood, Los Angeles!`,
+    description: `Touch of Elegance, Nails and Spa is an amazing place for all your
+    nail and spa related needs. For your nails, we have an array of options such as 
+    manicures, pedicures, and nail fix-ups for your acrylic, gel, and dipping nails.
+    For more spa-related options, we can provide facials, waxing, and massages. Touch
+    of Elegance is conviently located in Westwood, Los Angeles. Our full address is 
+    1846 Westwood Boulevard Los Angeles, California 90025 United States. Come to restore,
+    rejuvenate, and cleanse your body.`,
     author: `https://github.com/vincentktieu101`,
   },
   plugins: [
@@ -33,5 +39,6 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    `gatsby-plugin-material-ui`,
   ],
 }

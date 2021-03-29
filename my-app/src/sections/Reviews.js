@@ -6,14 +6,14 @@ export default function Reviews() {
   return (
     <div id="reviews">
       <Container>
-        <div className="reviews-content fade-in">
-          <h2>REVIEWS</h2>
-          <hr />
+        <div className="reviews-content">
+          <h2 className="fade-in">REVIEWS</h2>
+          <hr className="fade-in" />
           <div>
             <br />
           </div>
           <div className="flex-row">
-            <div className="flex-col">
+            <div className="flex-col review-box fade-in">
               <div>
                 <StarIcon />
                 <StarIcon />
@@ -29,12 +29,12 @@ export default function Reviews() {
                 you waiting for?!! Excellent service and highly recommended!"
               </div>
               <br />
-              <b>David C</b>
+              <h4>David C</h4>
               <br />
               <hr />
               <br />
             </div>
-            <div className="flex-col">
+            <div className="flex-col review-box fade-in">
               <div>
                 <StarIcon />
                 <StarIcon />
@@ -49,12 +49,12 @@ export default function Reviews() {
                 "Always a great job on my toes and fingers!!! ❤"
               </div>
               <br />
-              <b>Darlene G</b>
+              <h4>Darlene G</h4>
               <br />
               <hr />
               <br />
             </div>
-            <div className="flex-col">
+            <div className="flex-col review-box fade-in">
               <div>
                 <StarIcon />
                 <StarIcon />
@@ -77,7 +77,7 @@ export default function Reviews() {
                 is the way to tip here because they don't do tips on cards."
               </div>
               <br />
-              <b>Brigette</b>
+              <h4>Brigette</h4>
               <br />
               <hr />
               <br />
@@ -89,6 +89,7 @@ export default function Reviews() {
           <a href="https://www.google.com/search?hl=en-US&gl=us&q=Touch+of+Elegance+nails+%26+Spa,+1846+Westwood+Blvd,+Los+Angeles,+CA+90025&ludocid=6965767719597375710&lsig=AB86z5VILFIZw9r4QFSgNVZuwSwb#lrd=0x80c2bb9cebfea351:0x60ab60d5b27c00de,1">
             <div>Write a Review / Read More</div>
           </a>
+          <br />
         </div>
       </Container>
     </div>

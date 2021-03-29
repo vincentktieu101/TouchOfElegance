@@ -3,12 +3,33 @@ import Container from "@material-ui/core/Container"
 import TextField from "@material-ui/core/TextField"
 import Grid from "@material-ui/core/Grid"
 import Button from "@material-ui/core/Button"
+import emailjs from 'emailjs-com';
 
 export default function Contact() {
-  const [name, setName] = useState("")
-  const [phoneNumber, setPhoneNumber] = useState("")
-  const [email, setEmail] = useState("")
-  const [emailContent, setEmailContent] = useState("")
+  const [contactForm, setContactForm] = useState({
+    "name": "",
+    "phone": "",
+    "email": "",
+    "message": "",
+  })
+  
+  function submitForm(e) {
+    e.preventDefault();
+
+    emailjs.send('Vincentktieu101Gmail','ClientContactingUs', contactForm, process.env.emailId)
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+      }, (err) => {
+        console.log('FAILED...', err);
+      });
+    
+      setContactForm({
+      "name": "",
+      "phone": "",
+      "email": "",
+      "message": "",
+    })
+  }
 
   return (
     <div id="contact">
@@ -19,7 +40,7 @@ export default function Contact() {
           <div>
             <br />
           </div>
-          <form>
+          <form onSubmit={(e) => submitForm(e)}>
             <h4>CALL US</h4>
             <div>(310) 481-3917</div>
             <br />
@@ -30,9 +51,9 @@ export default function Contact() {
                   label="Your Name"
                   variant="outlined"
                   style={{ width: "100%" }}
-                  value={name}
+                  value={contactForm.name}
                   onChange={e => {
-                    setName(e.target.value)
+                    setContactForm({...contactForm, name: e.target.value})
                   }}
                 />
               </Grid>
@@ -41,9 +62,9 @@ export default function Contact() {
                   label="Your Phone Number"
                   variant="outlined"
                   style={{ width: "100%" }}
-                  value={phoneNumber}
+                  value={contactForm.phone}
                   onChange={e => {
-                    setPhoneNumber(e.target.value)
+                    setContactForm({...contactForm, phone: e.target.value})
                   }}
                 />
               </Grid>
@@ -52,9 +73,9 @@ export default function Contact() {
                   label="Your Email"
                   variant="outlined"
                   style={{ width: "100%" }}
-                  value={email}
+                  value={contactForm.email}
                   onChange={e => {
-                    setEmail(e.target.value)
+                    setContactForm({...contactForm, email: e.target.value})
                   }}
                 />
               </Grid>
@@ -66,9 +87,9 @@ export default function Contact() {
                   style={{ width: "100%" }}
                   multiline
                   rows={4}
-                  value={emailContent}
+                  value={contactForm.message}
                   onChange={e => {
-                    setEmailContent(e.target.value)
+                    setContactForm({...contactForm, message: e.target.value})
                   }}
                 />
               </Grid>
@@ -80,12 +101,14 @@ export default function Contact() {
                     backgroundColor: "#0b8100",
                     color: "white",
                   }}
+                  type="submit"
                 >
                   Submit
                 </Button>
               </Grid>
             </Grid>
           </form>
+          <br />
         </div>
       </Container>
     </div>
