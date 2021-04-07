@@ -186,36 +186,56 @@ const servicesList = [
     content: (
       <div>
         <div>
-          Classic Facial, 30 Minutes: Cleaning & Extraction of black heads and
-          white heads.. A comforting massage, of high frequency that increases
+          Classic Facial, 30 Minutes: Deep Cleaning & Extraction of black heads and
+          white heads. A steam and comforting massage, of high frequency that increases
           blood circulation and provides a nice tone to your skin. Results are
           immediately noticeable. Your face will be clean, healthy, and shiny.
         </div>
         <br />
         <div>
-          European Deluxe Facial, 60 Minutes: Cleaning & Extraction of black
-          heads and white heads.. A comforting massage, of high frequency that
+          European Deluxe Facial, 60 Minutes: Deep Cleaning & Extraction of black
+          heads and white heads. A steam and comforting massage, of high frequency that
           increases blood circulation and provides a nice tone to your skin.
           Results are immediately noticeable. Your face will be clean, healthy,
           and shiny.
         </div>
-        <div>....</div>
+        <br />
+        <div>
+          Elegance Deluxe Facial, 75 Minutes: Deep Cleaning & Extraction of black
+          heads and white heads. The Elegance Deluxe Facial uses ORGANIC masks. A steam and
+          comforting massage, of high frquency that increases blood circulation and provides
+          a nice tone to your skin. Results are immediately noticeable. Your face will
+          be clean, healthy and shiny.
+        </div>
       </div>
     ),
   },
   {
     title: "manicure service",
-    content: <div>...</div>,
+    content: (
+      <div>
+        <div>Regular Manicure - 15</div>
+        <div>Includes: Massage & warm towel wrap</div>
+        <br />
+        <div>Classic Manicure - 20</div>
+        <div>Includes: Exfoliating sea salt scrub, massage with warm towel</div>
+        <br />
+        <div>Royal Deluxe Manicure - 25</div>
+        <div>Includes: Exfoliation srcub, 6 minutes Hand Massage with warm towel</div>
+        <br />
+        <div>Elegance Deluxe Manicure - 30</div>
+        <div>Exfoliation sea salt scrub, hot paraffin wax, 6 minutes massage with warm towel wrap</div>
+      </div>
+    ),
   },
   {
-    title: "kids",
+    title: "kids - 10 and under",
     content: (
       <div>
         <div>Regular Manicure - 10</div>
         <div>Regular Pedicure - 20</div>
         <div>Gel Manicure - 20</div>
         <div>Change Gel Color - 10</div>
-        <div>...</div>
       </div>
     ),
   },

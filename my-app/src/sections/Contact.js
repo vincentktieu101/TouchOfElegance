@@ -3,9 +3,11 @@ import Container from "@material-ui/core/Container"
 import TextField from "@material-ui/core/TextField"
 import Grid from "@material-ui/core/Grid"
 import Button from "@material-ui/core/Button"
-import emailjs from 'emailjs-com';
+import emailjs from "emailjs-com"
+import { useSnackbar } from "notistack"
 
 export default function Contact() {
+  const { enqueueSnackbar } = useSnackbar()
   const [contactForm, setContactForm] = useState({
     "name": "",
     "phone": "",
@@ -16,11 +18,31 @@ export default function Contact() {
   function submitForm(e) {
     e.preventDefault();
 
-    emailjs.send('Vincentktieu101Gmail','ClientContactingUs', contactForm, process.env.emailId)
+    if (contactForm.name === "") {
+      enqueueSnackbar("Name Missing", { "variant": "error" });
+      return;
+    }
+
+    if (contactForm.phone === "") {
+      enqueueSnackbar("Phone Missing", { "variant": "error" });
+      return;
+    }
+
+    if (contactForm.email === "") {
+      enqueueSnackbar("Email Missing", { "variant": "error" });
+      return;
+    }
+
+    if (contactForm.message === "") {
+      enqueueSnackbar("Message Missing", { "variant": "error" });
+      return;
+    }
+
+    emailjs.send("Vincentktieu101Gmail", "ClientContactingUs", contactForm, "user_zSfjegoCh9d1rl8s1eCa9")
       .then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
+        enqueueSnackbar("Message Sent!", { "variant": "success" });
       }, (err) => {
-        console.log('FAILED...', err);
+        enqueueSnackbar("Try Again", { "variant": "error" });
       });
     
       setContactForm({
@@ -44,7 +66,7 @@ export default function Contact() {
             <h4>CALL US</h4>
             <div>(310) 481-3917</div>
             <br />
-            <h4>EMAIL US</h4>
+            <h4 style={{marginBottom: "5px"}}>EMAIL US</h4>
             <Grid container spacing={1} justify="center" alignItems="center">
               <Grid item xs={12}>
                 <TextField

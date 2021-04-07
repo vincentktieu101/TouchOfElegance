@@ -1,4 +1,6 @@
 import React, { useEffect } from "react"
+import { SnackbarProvider } from "notistack"
+
 import "../index.css"
 import Layout from "../components/layout"
 import Cover from "../sections/Cover"
@@ -8,11 +10,9 @@ import Photos from "../sections/Photos"
 import Feature from "../sections/Feature"
 import Reviews from "../sections/Reviews"
 import Contact from "../sections/Contact"
-
 import SEO from "../components/seo"
 
 function IndexPage() {
-
   useEffect(() => {
     const faders = document.querySelectorAll('.fade-in')
     const appearOptions = {
@@ -35,16 +35,18 @@ function IndexPage() {
   }, [])
 
   return (
-    <Layout>
-      <SEO title="Home" />
-      <Cover />
-      <About />
-      <Photos />
-      <Services />
-      <Feature />
-      <Reviews />
-      <Contact />
-    </Layout>
+    <SnackbarProvider maxSnack={3}>
+      <Layout>
+        <SEO title="Home" />
+        <Cover />
+        <About />
+        <Photos />
+        <Services />
+        <Feature />
+        <Reviews />
+        <Contact />
+      </Layout>
+    </SnackbarProvider>
   )
 }
 

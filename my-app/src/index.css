@@ -56,7 +56,7 @@ hr {
 
 #footer {
   color: white;
-  background-image: -webkit-linear-gradient(45deg, #8ce265 0%, #207943 100%);
+  background-image: -webkit-linear-gradient(315deg, #6ecc42 0%, #186437 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,7 +78,7 @@ hr {
 #reviews,
 #contact {
   min-height: 50vh;
-  padding: 7vh 0;
+  padding: 10vh 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -122,7 +122,7 @@ hr {
 
 #cover {
   color: white;
-  background-image: -webkit-linear-gradient(270deg, #8ce265 0%, #207943 100%);
+  background-image: -webkit-linear-gradient(270deg, #6ecc42 0%, #186437 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -157,14 +157,17 @@ hr {
 
 .cover-brand-one {
   font-size: 91px;
+  text-shadow: 3px 3px rgb(32, 32, 32, .25);
 }
 
 .cover-brand-two {
   font-size: 64px;
+  text-shadow: 3px 3px rgb(32, 32, 32, .25);
 }
 
 .cover-brand-three {
   margin-top: 30px;
+  text-shadow: 2px 2px rgb(32, 32, 32, .25);
 }
 
 @media (max-width: 1200px) {
@@ -252,6 +255,20 @@ hr {
   }
 }
 
+@media (max-height: 700px) {
+  .cover-text {
+    position: absolute;
+    margin-right: 0px;
+    margin-top: -250px;
+  }
+
+  .cover-logo {
+    margin-left: -60px;
+    margin-top: 260px;
+    width: 480px;
+  }
+}
+
 .about-featured-img {
   width: 880px;
 }
@@ -310,7 +327,7 @@ hr {
 
 .feature-overlay {
   position: absolute;
-  background: -webkit-linear-gradient(0deg, #88da62 0%, #258d4f 100%);
+  background-image: -webkit-linear-gradient(270deg, #6ecc42 0%, #186437 100%);
   opacity: 0.9;
   top: 0;
   bottom: 0;
@@ -321,7 +338,7 @@ hr {
 
 .feature-content {
   color: white;
-  height: 40vh;
+  min-height: 40vh;
   width: 100%;
   display: flex;
   flex-direction: column;

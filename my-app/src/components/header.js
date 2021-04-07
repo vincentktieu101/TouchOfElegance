@@ -40,26 +40,13 @@ const useStyles = makeStyles(theme => ({
 
 export default function ButtonAppBar() {
   const classes = useStyles()
-  const [state, setState] = useState({
-    left: false,
-  })
-
-  const toggleDrawer = (anchor, open) => event => {
-    if (
-      event.type === "keydown" &&
-      (event.key === "Tab" || event.key === "Shift")
-    ) {
-      return
-    }
-
-    setState({ ...state, [anchor]: open })
-  }
+  const [state, setState] = useState()
 
   const list = () => (
     <div
       role="presentation"
-      onClick={toggleDrawer("left", false)}
-      onKeyDown={toggleDrawer("left", false)}
+      onClick={() => setState(false)}
+      onKeyDown={() => setState(false)}
     >
       <List>
         <a href="#cover">
@@ -124,17 +111,17 @@ export default function ButtonAppBar() {
             className={classes.menuButton}
             color="inherit"
             aria-label="menu"
-            onClick={toggleDrawer("left", true)}
+            onClick={() => setState(true)}
           >
             <MenuIcon className="main-color" />
           </IconButton>
           <Drawer
             anchor={"left"}
-            open={state["left"]}
-            onClose={toggleDrawer("left", false)}
+            open={state}
+            onClose={() => setState(false)}
             className="drawer"
           >
-            {list("left")}
+            {list()}
           </Drawer>
           <Typography component={"span"} variant="h6" className={classes.title}>
             <a
@@ -145,7 +132,6 @@ export default function ButtonAppBar() {
               <h4>TOUCH OF ELEGANCE</h4>
             </a>
           </Typography>
-          {/* <Button color="inherit">Login</Button> */}
           <a
             href="https://www.google.com/maps/place/Touch+of+Elegance+nails+%26+Spa/@34.048895,-118.4363709,18.32z/data=!4m5!3m4!1s0x80c2bb9cebfea351:0x60ab60d5b27c00de!8m2!3d34.0489753!4d-118.4356852"
             target="_blank"

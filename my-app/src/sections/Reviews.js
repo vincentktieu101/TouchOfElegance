@@ -22,6 +22,7 @@ export default function Reviews() {
                 <StarIcon />
                 <br />
                 <div className="text-secondary">a week ago</div>
+                <br />
               </div>
               <br />
               <div className="review-text">
@@ -43,6 +44,7 @@ export default function Reviews() {
                 <StarIcon />
                 <br />
                 <div className="text-secondary">a month ago</div>
+                <br />
               </div>
               <br />
               <div className="review-text">
@@ -63,6 +65,7 @@ export default function Reviews() {
                 <StarIcon />
                 <br />
                 <div className="text-secondary">3 years ago</div>
+                <br />
               </div>
               <br />
               <div className="review-text">
