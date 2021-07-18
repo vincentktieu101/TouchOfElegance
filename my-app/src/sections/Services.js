@@ -89,12 +89,14 @@ const servicesList = [
     title: "spa pedicure & manicure",
     content: (
       <div>
-        <div>Spa Pedicure - 23</div>
+        {/* Question: What's the difference between Regular and Spa Pedicure */}
         <div>Regular Manicure - 15</div>
-        <div>Spa Pedi & Mani - 35</div>
-        <div>Deluxe Manicure - 50</div>
-        <div>Deluxe Mani & Pedi - 75</div>
+        <div>Spa Pedicure - 23</div>
         <div>Regular Pedicure - 23</div>
+        <div>Spa Pedi & Mani - 35</div>
+        <div>Deluxe Manicure - 25</div>
+        <div>Deluxe Pedicure - 50</div>
+        <div>Deluxe Mani & Pedi - 75</div>
         <div>Regular Manicure & Pedicure - 35</div>
       </div>
     ),
@@ -111,12 +113,14 @@ const servicesList = [
         <div>Ears - 12</div>
         <div>Under Arms - 15</div>
         <div>Face - 35</div>
-        <div>Bikini - 35+</div>
-        <div>Full Legs - 35+</div>
-        <div>Half Legs - 25</div>
-        <div>Full Legs & Bikini - 55</div>
-        <div>Full Arms - 25</div>
+        <div>Bikini - 35</div>
         <div>Half Arms - 18</div>
+        <div>Full Arms - 25</div>
+        <div>Half Legs - 25</div>
+        <div>Full Legs - 35</div>
+        <div>Full Legs & Bikini - 55</div>
+        <div>Back - 25</div>
+        <div>Chest - 25</div>
       </div>
     ),
   },
@@ -125,7 +129,7 @@ const servicesList = [
     content: (
       <div>
         <div>
-          Regular Spas Pedicure - 20
+          Regular Spas Pedicure - 23
         </div>
         <div>
           Nails Shaping, Cuticle Cleaning, MASSAGE with
@@ -150,7 +154,7 @@ const servicesList = [
         </div>
         <br />
         <div>
-          Garden Spa Deluxe Pedicure - 35
+          Garden Spa Deluxe Pedicure - 39
         </div>
         <div>
           Calluses Treatment, Exfoliation OPI

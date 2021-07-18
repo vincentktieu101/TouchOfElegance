@@ -31,7 +31,6 @@ function IndexPage() {
     faders.forEach(faders => {
       appearOnScroll.observe(faders);
     })
-
   }, [])
 
   return (
