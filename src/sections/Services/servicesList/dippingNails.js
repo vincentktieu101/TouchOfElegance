@@ -1,0 +1,23 @@
+const dippingNails = {
+  "title": "dipping nails",
+  "content": [
+    {
+      "name": "pink & white with tip",
+      "price": 50
+    },
+    {
+      "name": "pink & white",
+      "price": 45
+    },
+    {
+      "name": "dipping nails",
+      "price": 40
+    },
+    {
+      "name": "dipping nails with tip",
+      "price": 45
+    }
+  ]
+}
+
+export default dippingNails;

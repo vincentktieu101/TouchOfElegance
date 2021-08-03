@@ -1,0 +1,23 @@
+const gelNails = {
+  "title": "gel nails",
+  "content": [
+    {
+      "name": "gel nails manicure",
+      "price": 30
+    },
+    {
+      "name": "gel pedicure",
+      "price": 33
+    },
+    {
+      "name": "gel polish",
+      "price": 18
+    },
+    {
+      "name": "gel removal",
+      "price": 5
+    }
+  ]
+}
+
+export default gelNails;

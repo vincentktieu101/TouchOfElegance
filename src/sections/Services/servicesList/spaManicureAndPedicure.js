@@ -1,0 +1,31 @@
+const spaManicureAndPedicure = {
+  "title": "spa manicure and pedicure",
+  "content": [
+    {
+      "name": "spa manicure",
+      "price": 15
+    },
+    {
+      "name": "spa pedicure",
+      "price": 23
+    },
+    {
+      "name": "spa manicure & pedicure",
+      "price": 35
+    },
+    {
+      "name": "deluxe manicure",
+      "price": 37
+    },
+    {
+      "name": "deluxe pedicure",
+      "price": 55
+    },
+    {
+      "name": "deluxe manicure & pedicure",
+      "price": 90
+    }
+  ]
+}
+
+export default spaManicureAndPedicure;

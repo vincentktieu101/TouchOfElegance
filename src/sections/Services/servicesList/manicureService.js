@@ -1,0 +1,27 @@
+const manicureService = {
+  "title": "manicure service",
+  "content": [
+    {
+      "name": "regular manicure",
+      "price": 15,
+      "description": "Includes: Massage and warm towel wrap"
+    },
+    {
+      "name": "classic manicure",
+      "price": 20,
+      "description": "Includes: Exfoliating sea salt scrub, massage with warm towel"
+    },
+    {
+      "name": "royal deluxe manicure",
+      "price": 25,
+      "description": "Includes: Exfoliation scrub, 5 minutes Hand Massage with warm towel"
+    },
+    {
+      "name": "elegance deluxe manicure",
+      "price": 37,
+      "description": "Exfoliation sea salt scrub, hot paraffin wax, 5 minutes massage with warm towel wrap"
+    }
+  ]
+}
+
+export default manicureService;
