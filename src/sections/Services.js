@@ -53,8 +53,8 @@ const servicesList = [
     content: (
       <div>
         <div>Gel Nails Manicure - 30</div>
-        <div>Gel Pedicure - 38</div>
-        <div>Gel Polish - 15</div>
+        <div>Gel Pedicure - 33</div>
+        <div>Gel Polish - 18</div>
         <div>Gel Removal - 5</div>
       </div>
     ),
@@ -66,11 +66,11 @@ const servicesList = [
         <div>Paraffin Wax - 7</div>
         <div>Callus Removal - 10</div>
         <div>Polish Change - 10</div>
-        <div>Polish Change French Tip - 14</div>
+        <div>Polish Change French Tip - 15</div>
         <div>Design - 5</div>
-        <div>Sea Salt - 7</div>
-        <div>Foot Scrub - 7</div>
-        <div>Mask - 7</div>
+        <div>Sea Salt - 5</div>
+        <div>Foot Scrub - 5</div>
+        <div>Mask - 5</div>
       </div>
     ),
   },
@@ -89,15 +89,12 @@ const servicesList = [
     title: "spa pedicure & manicure",
     content: (
       <div>
-        {/* Question: What's the difference between Regular and Spa Pedicure */}
-        <div>Regular Manicure - 15</div>
+        <div>Spa Manicure - 15</div>
         <div>Spa Pedicure - 23</div>
-        <div>Regular Pedicure - 23</div>
-        <div>Spa Pedi & Mani - 35</div>
-        <div>Deluxe Manicure - 25</div>
-        <div>Deluxe Pedicure - 50</div>
-        <div>Deluxe Mani & Pedi - 75</div>
-        <div>Regular Manicure & Pedicure - 35</div>
+        <div>Spa Manicure & Pedicure - 35</div>
+        <div>Deluxe Manicure - 37</div>
+        <div>Deluxe Pedicure - 55</div>
+        <div>Deluxe Mani & Pedi - 90</div>
       </div>
     ),
   },
@@ -113,12 +110,13 @@ const servicesList = [
         <div>Ears - 12</div>
         <div>Under Arms - 15</div>
         <div>Face - 35</div>
-        <div>Bikini - 35</div>
+        <div>Bikini - 25</div>
+        <div>Brazilian Bikini - 35</div>
         <div>Half Arms - 18</div>
         <div>Full Arms - 25</div>
         <div>Half Legs - 25</div>
         <div>Full Legs - 35</div>
-        <div>Full Legs & Bikini - 55</div>
+        <div>Full Legs & Bikini - 60</div>
         <div>Back - 25</div>
         <div>Chest - 25</div>
       </div>
@@ -137,11 +135,12 @@ const servicesList = [
         </div>
         <br />
         <div>
-          Classic Spa Pedicure - 30
+          Classic Spa Pedicure - 27
         </div>
         <div>
-          Calluses Treatment OR Exfoliation OPI Tropical
-          Sugar Scrub, Therapeutic Foot MASSAGE with warm towel wrap and polish
+          Calluses Treatment OR Exfoliation OPI Tropical Sugar 
+          Scrub, therapeutic foot massage with warm towel wrap. Provides
+          hydration for your skin and a relaxing experience.
         </div>
         <br />
         <div>
@@ -149,12 +148,12 @@ const servicesList = [
         </div>
         <div>
           Calluses Treatment, Exfoliation OPI Tropical Sugar
-          Scrub, Therapeutic Foot MASSAGE, and warm towel wrap. Provides
-          hydration for your skin and promotes pure relaxation
+          Scrub, therapeutic foot massage, sea salt, and warm towel wrap. Provides
+          hydration for your skin and a relaxing experience.
         </div>
         <br />
         <div>
-          Garden Spa Deluxe Pedicure - 39
+          Garden Spa Deluxe Pedicure - 38
         </div>
         <div>
           Calluses Treatment, Exfoliation OPI
@@ -174,7 +173,7 @@ const servicesList = [
         </div>
         <br />
         <div>
-          Elegance Garden Spa Deluxe Pedicure - 50
+          Elegance Garden Spa Deluxe Pedicure - 55
         </div>
         <div>
           Bursting Ocean Sea Salt, Calluses
@@ -189,23 +188,26 @@ const servicesList = [
     title: "facial",
     content: (
       <div>
+        <div>Classic Facial, 30 Minutes - 35</div>
         <div>
-          Classic Facial, 30 Minutes: Deep Cleaning & Extraction of black heads and
+          Deep Cleaning & Extraction of black heads and
           white heads. A steam and comforting massage, of high frequency that increases
           blood circulation and provides a nice tone to your skin. Results are
           immediately noticeable. Your face will be clean, healthy, and shiny.
         </div>
         <br />
+        <div>European Deluxe Facial, 60 Minutes - 55</div>
         <div>
-          European Deluxe Facial, 60 Minutes: Deep Cleaning & Extraction of black
+          Deep Cleaning & Extraction of black
           heads and white heads. A steam and comforting massage, of high frequency that
           increases blood circulation and provides a nice tone to your skin.
           Results are immediately noticeable. Your face will be clean, healthy,
           and shiny.
         </div>
         <br />
+        <div>Elegance Deluxe Facial, 75 Minutes - 70</div>
         <div>
-          Elegance Deluxe Facial, 75 Minutes: Deep Cleaning & Extraction of black
+          Deep Cleaning & Extraction of black
           heads and white heads. The Elegance Deluxe Facial uses ORGANIC masks. A steam and
           comforting massage, of high frquency that increases blood circulation and provides
           a nice tone to your skin. Results are immediately noticeable. Your face will
@@ -225,10 +227,10 @@ const servicesList = [
         <div>Includes: Exfoliating sea salt scrub, massage with warm towel</div>
         <br />
         <div>Royal Deluxe Manicure - 25</div>
-        <div>Includes: Exfoliation srcub, 6 minutes Hand Massage with warm towel</div>
+        <div>Includes: Exfoliation srcub, 5 minutes Hand Massage with warm towel</div>
         <br />
-        <div>Elegance Deluxe Manicure - 30</div>
-        <div>Exfoliation sea salt scrub, hot paraffin wax, 6 minutes massage with warm towel wrap</div>
+        <div>Elegance Deluxe Manicure - 37</div>
+        <div>Exfoliation sea salt scrub, hot paraffin wax, 5 minutes massage with warm towel wrap</div>
       </div>
     ),
   },
@@ -236,10 +238,10 @@ const servicesList = [
     title: "kids - 10 and under",
     content: (
       <div>
-        <div>Regular Manicure - 10</div>
-        <div>Regular Pedicure - 20</div>
-        <div>Gel Manicure - 20</div>
-        <div>Change Gel Color - 10</div>
+        <div>Spa Manicure - 10</div>
+        <div>Spa Pedicure - 20</div>
+        <div>Gel Manicure - 10</div>
+        <div>Change Gel Color - 5</div>
       </div>
     ),
   },
