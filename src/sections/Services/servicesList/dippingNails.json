@@ -1,4 +1,4 @@
-const dippingNails = {
+{
   "title": "dipping nails",
   "content": [
     {
@@ -19,5 +19,3 @@ const dippingNails = {
     }
   ]
 }
-
-export default dippingNails;

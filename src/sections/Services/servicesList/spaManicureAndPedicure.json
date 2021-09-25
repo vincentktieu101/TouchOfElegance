@@ -1,4 +1,4 @@
-const spaManicureAndPedicure = {
+{
   "title": "spa manicure and pedicure",
   "content": [
     {
@@ -27,5 +27,3 @@ const spaManicureAndPedicure = {
     }
   ]
 }
-
-export default spaManicureAndPedicure;

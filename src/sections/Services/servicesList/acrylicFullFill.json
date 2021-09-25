@@ -1,4 +1,4 @@
-const acrylicFullFill = {
+{
   "title": "acrylic full fill",
   "content": [
     {
@@ -23,5 +23,3 @@ const acrylicFullFill = {
     }
   ]
 }
-
-export default acrylicFullFill;

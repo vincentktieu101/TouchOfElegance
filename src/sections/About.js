@@ -1,8 +1,8 @@
-import React from "react"
-import Container from "@material-ui/core/Container"
-import HomeIcon from "@material-ui/icons/Home"
-import PhoneIcon from "@material-ui/icons/Phone"
-import QueryBuilderIcon from "@material-ui/icons/QueryBuilder"
+import React from "react";
+import Container from "@material-ui/core/Container";
+import HomeIcon from "@material-ui/icons/Home";
+import PhoneIcon from "@material-ui/icons/Phone";
+import QueryBuilderIcon from "@material-ui/icons/QueryBuilder";
 
 export default function About() {
   return (
@@ -32,8 +32,7 @@ export default function About() {
               <div>
                 <div className="about-text">
                   <h4>
-                    <HomeIcon style={{ fontSize: "16px" }} /> 
-                    {" "}Address
+                    <HomeIcon style={{ fontSize: "16px" }} /> Address
                   </h4>
                   <div>1846 Westwood Boulevard</div>
                   <div>Los Angeles, California 90025</div>
@@ -42,16 +41,15 @@ export default function About() {
                 <br />
                 <div className="about-text">
                   <h4>
-                    <PhoneIcon style={{ fontSize: "16px" }} /> 
-                    {" "}Phone
+                    <PhoneIcon style={{ fontSize: "16px" }} /> Phone
                   </h4>
                   <div>(310) 481-3917</div>
                 </div>
                 <br />
-                <div className="about-text"> 
+                <div className="about-text">
                   <h4>
-                    <QueryBuilderIcon style={{ fontSize: "16px" }} /> 
-                    {" "}Business Hours
+                    <QueryBuilderIcon style={{ fontSize: "16px" }} /> Business
+                    Hours
                   </h4>
                   <div>Mon: 9:30 AM – 7:00 PM</div>
                   <div>Tue: 9:30 AM – 7:00 PM</div>
@@ -67,5 +65,5 @@ export default function About() {
         </div>
       </Container>
     </div>
-  )
+  );
 }

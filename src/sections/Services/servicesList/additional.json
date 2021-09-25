@@ -1,4 +1,4 @@
-const additional = {
+{
   "title": "additional",
   "content": [
     {
@@ -35,5 +35,3 @@ const additional = {
     }
   ]
 }
-
-export default additional;

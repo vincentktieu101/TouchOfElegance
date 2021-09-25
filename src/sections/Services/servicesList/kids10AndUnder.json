@@ -1,4 +1,4 @@
-const kids10AndUnder = {
+{
   "title": "kids - 10 and under",
   "content": [
     {
@@ -23,5 +23,3 @@ const kids10AndUnder = {
     }
   ]
 }
-
-export default kids10AndUnder;

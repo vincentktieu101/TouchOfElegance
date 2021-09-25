@@ -11,17 +11,17 @@ import manicureService from "./manicureService";
 import kids10AndUnder from "./kids10AndUnder";
 
 const servicesList = [
-    acrylicFullSet,
-    acrylicFullFill,
-    gelNails,
-    additional,
-    dippingNails,
-    spaManicureAndPedicure,
-    waxing,
-    spas,
-    facial,
-    manicureService,
-    kids10AndUnder
+  acrylicFullSet,
+  acrylicFullFill,
+  gelNails,
+  additional,
+  dippingNails,
+  spaManicureAndPedicure,
+  waxing,
+  spas,
+  facial,
+  manicureService,
+  kids10AndUnder,
 ];
 
 export default servicesList;

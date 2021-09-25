@@ -1,4 +1,4 @@
-const acrylicFullSet = {
+{
   "title": "acrylic full set",
   "content": [
     {
@@ -15,5 +15,3 @@ const acrylicFullSet = {
     }
   ]
 }
-
-export default acrylicFullSet

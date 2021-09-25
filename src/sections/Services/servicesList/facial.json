@@ -1,4 +1,4 @@
-const facial = {
+{
   "title": "facial",
   "content": [
     {
@@ -18,5 +18,3 @@ const facial = {
     }
   ]
 }
-
-export default facial;

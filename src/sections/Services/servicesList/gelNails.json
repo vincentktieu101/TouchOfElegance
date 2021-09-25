@@ -1,4 +1,4 @@
-const gelNails = {
+{
   "title": "gel nails",
   "content": [
     {
@@ -19,5 +19,3 @@ const gelNails = {
     }
   ]
 }
-
-export default gelNails;

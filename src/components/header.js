@@ -1,26 +1,26 @@
-import React, { useState } from "react"
-import { makeStyles } from "@material-ui/core/styles"
-import AppBar from "@material-ui/core/AppBar"
-import Toolbar from "@material-ui/core/Toolbar"
-import Typography from "@material-ui/core/Typography"
-import IconButton from "@material-ui/core/IconButton"
-import MenuIcon from "@material-ui/icons/Menu"
+import React, { useState } from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import Typography from "@material-ui/core/Typography";
+import IconButton from "@material-ui/core/IconButton";
+import MenuIcon from "@material-ui/icons/Menu";
 
-import Drawer from "@material-ui/core/Drawer"
-import Divider from "@material-ui/core/Divider"
-import List from "@material-ui/core/List"
-import ListItem from "@material-ui/core/ListItem"
-import ListItemIcon from "@material-ui/core/ListItemIcon"
-import ListItemText from "@material-ui/core/ListItemText"
-import HomeIcon from "@material-ui/icons/Home"
-import MenuBookIcon from "@material-ui/icons/MenuBook"
-import PhotoLibraryIcon from "@material-ui/icons/PhotoLibrary"
-import RoomServiceIcon from "@material-ui/icons/RoomService"
-import GradeIcon from "@material-ui/icons/Grade"
-import MessageIcon from "@material-ui/icons/Message"
-import DirectionsIcon from "@material-ui/icons/Directions"
+import Drawer from "@material-ui/core/Drawer";
+import Divider from "@material-ui/core/Divider";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
+import ListItemIcon from "@material-ui/core/ListItemIcon";
+import ListItemText from "@material-ui/core/ListItemText";
+import HomeIcon from "@material-ui/icons/Home";
+import MenuBookIcon from "@material-ui/icons/MenuBook";
+import PhotoLibraryIcon from "@material-ui/icons/PhotoLibrary";
+import RoomServiceIcon from "@material-ui/icons/RoomService";
+import GradeIcon from "@material-ui/icons/Grade";
+import MessageIcon from "@material-ui/icons/Message";
+import DirectionsIcon from "@material-ui/icons/Directions";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
@@ -36,11 +36,11 @@ const useStyles = makeStyles(theme => ({
   fullList: {
     width: "auto",
   },
-}))
+}));
 
 export default function ButtonAppBar() {
-  const classes = useStyles()
-  const [state, setState] = useState()
+  const classes = useStyles();
+  const [state, setState] = useState();
 
   const list = () => (
     <div
@@ -54,7 +54,9 @@ export default function ButtonAppBar() {
             <ListItemIcon>
               <HomeIcon />
             </ListItemIcon>
-            <ListItemText><h4>HOME</h4></ListItemText>
+            <ListItemText>
+              <h4>HOME</h4>
+            </ListItemText>
           </ListItem>
         </a>
         <a href="#about">
@@ -62,7 +64,9 @@ export default function ButtonAppBar() {
             <ListItemIcon>
               <MenuBookIcon />
             </ListItemIcon>
-            <ListItemText><h4>ABOUT</h4></ListItemText>
+            <ListItemText>
+              <h4>ABOUT</h4>
+            </ListItemText>
           </ListItem>
         </a>
         <a href="#photos">
@@ -70,7 +74,9 @@ export default function ButtonAppBar() {
             <ListItemIcon>
               <PhotoLibraryIcon />
             </ListItemIcon>
-            <ListItemText><h4>PHOTOS</h4></ListItemText>
+            <ListItemText>
+              <h4>PHOTOS</h4>
+            </ListItemText>
           </ListItem>
         </a>
         <a href="#services">
@@ -78,7 +84,9 @@ export default function ButtonAppBar() {
             <ListItemIcon>
               <RoomServiceIcon />
             </ListItemIcon>
-            <ListItemText><h4>SERVICES</h4></ListItemText>
+            <ListItemText>
+              <h4>SERVICES</h4>
+            </ListItemText>
           </ListItem>
         </a>
         <a href="#reviews">
@@ -86,7 +94,9 @@ export default function ButtonAppBar() {
             <ListItemIcon>
               <GradeIcon />
             </ListItemIcon>
-            <ListItemText><h4>REVIEWS</h4></ListItemText>
+            <ListItemText>
+              <h4>REVIEWS</h4>
+            </ListItemText>
           </ListItem>
         </a>
         <a href="#contact">
@@ -94,13 +104,15 @@ export default function ButtonAppBar() {
             <ListItemIcon>
               <MessageIcon />
             </ListItemIcon>
-            <ListItemText><h4>CONTACT US</h4></ListItemText>
+            <ListItemText>
+              <h4>CONTACT US</h4>
+            </ListItemText>
           </ListItem>
         </a>
         <Divider />
       </List>
     </div>
-  )
+  );
 
   return (
     <div className={classes.root}>
@@ -144,5 +156,5 @@ export default function ButtonAppBar() {
         </Toolbar>
       </AppBar>
     </div>
-  )
+  );
 }

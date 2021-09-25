@@ -1,4 +1,4 @@
-const spas = {
+{
   "title": "spas",
   "content": [
     {
@@ -33,5 +33,3 @@ const spas = {
     }
   ]
 }
-
-export default spas;

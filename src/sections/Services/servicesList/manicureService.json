@@ -1,4 +1,4 @@
-const manicureService = {
+{
   "title": "manicure service",
   "content": [
     {
@@ -23,5 +23,3 @@ const manicureService = {
     }
   ]
 }
-
-export default manicureService;

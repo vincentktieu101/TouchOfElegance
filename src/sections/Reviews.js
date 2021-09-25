@@ -1,6 +1,6 @@
-import React from "react"
-import Container from "@material-ui/core/Container"
-import StarIcon from "@material-ui/icons/Star"
+import React from "react";
+import Container from "@material-ui/core/Container";
+import StarIcon from "@material-ui/icons/Star";
 
 export default function Reviews() {
   return (
@@ -96,5 +96,5 @@ export default function Reviews() {
         </div>
       </Container>
     </div>
-  )
+  );
 }

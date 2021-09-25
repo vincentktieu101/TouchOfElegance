@@ -1,56 +1,65 @@
-import React, { useState } from "react"
-import Container from "@material-ui/core/Container"
-import TextField from "@material-ui/core/TextField"
-import Grid from "@material-ui/core/Grid"
-import Button from "@material-ui/core/Button"
-import emailjs from "emailjs-com"
-import { useSnackbar } from "notistack"
+import React, { useState } from "react";
+import Container from "@material-ui/core/Container";
+import TextField from "@material-ui/core/TextField";
+import Grid from "@material-ui/core/Grid";
+import Button from "@material-ui/core/Button";
+import emailjs from "emailjs-com";
+import { useSnackbar } from "notistack";
 
 export default function Contact() {
-  const { enqueueSnackbar } = useSnackbar()
+  const { enqueueSnackbar } = useSnackbar();
   const [contactForm, setContactForm] = useState({
-    "name": "",
-    "phone": "",
-    "email": "",
-    "message": "",
-  })
-  
+    name: "",
+    phone: "",
+    email: "",
+    message: "",
+  });
+
   function submitForm(e) {
     e.preventDefault();
 
     if (contactForm.name === "") {
-      enqueueSnackbar("Name Missing", { "variant": "error" });
+      enqueueSnackbar("Name Missing", { variant: "error" });
       return;
     }
 
     if (contactForm.phone === "") {
-      enqueueSnackbar("Phone Missing", { "variant": "error" });
+      enqueueSnackbar("Phone Missing", { variant: "error" });
       return;
     }
 
     if (contactForm.email === "") {
-      enqueueSnackbar("Email Missing", { "variant": "error" });
+      enqueueSnackbar("Email Missing", { variant: "error" });
       return;
     }
 
     if (contactForm.message === "") {
-      enqueueSnackbar("Message Missing", { "variant": "error" });
+      enqueueSnackbar("Message Missing", { variant: "error" });
       return;
     }
 
-    emailjs.send("Vincentktieu101Gmail", "ClientContactingUs", contactForm, "user_zSfjegoCh9d1rl8s1eCa9")
-      .then((response) => {
-        enqueueSnackbar("Message Sent!", { "variant": "success" });
-      }, (err) => {
-        enqueueSnackbar("Try Again", { "variant": "error" });
-      });
-    
-      setContactForm({
-      "name": "",
-      "phone": "",
-      "email": "",
-      "message": "",
-    })
+    emailjs
+      .send(
+        "Vincentktieu101Gmail",
+        "ClientContactingUs",
+        contactForm,
+        "user_zSfjegoCh9d1rl8s1eCa9"
+      )
+      .then(
+        (response) => {
+          enqueueSnackbar("Message Sent!", { variant: "success" });
+        },
+        (err) => {
+          enqueueSnackbar("Try Again", { variant: "error" });
+        }
+      );
+
+    setContactForm({
+      name: "",
+      phone: "",
+      email: "",
+      message: "",
+    });
   }
 
   return (
@@ -66,7 +75,7 @@ export default function Contact() {
             <h4>CALL US</h4>
             <div>(310) 481-3917</div>
             <br />
-            <h4 style={{marginBottom: "5px"}}>EMAIL US</h4>
+            <h4 style={{ marginBottom: "5px" }}>EMAIL US</h4>
             <Grid container spacing={1} justify="center" alignItems="center">
               <Grid item xs={12}>
                 <TextField
@@ -74,8 +83,11 @@ export default function Contact() {
                   variant="outlined"
                   style={{ width: "100%" }}
                   value={contactForm.name}
-                  onChange={e => {
-                    setContactForm({...contactForm, name: e.target.value})
+                  onChange={(e) => {
+                    setContactForm({
+                      ...contactForm,
+                      name: e.target.value,
+                    });
                   }}
                 />
               </Grid>
@@ -85,8 +97,11 @@ export default function Contact() {
                   variant="outlined"
                   style={{ width: "100%" }}
                   value={contactForm.phone}
-                  onChange={e => {
-                    setContactForm({...contactForm, phone: e.target.value})
+                  onChange={(e) => {
+                    setContactForm({
+                      ...contactForm,
+                      phone: e.target.value,
+                    });
                   }}
                 />
               </Grid>
@@ -96,8 +111,11 @@ export default function Contact() {
                   variant="outlined"
                   style={{ width: "100%" }}
                   value={contactForm.email}
-                  onChange={e => {
-                    setContactForm({...contactForm, email: e.target.value})
+                  onChange={(e) => {
+                    setContactForm({
+                      ...contactForm,
+                      email: e.target.value,
+                    });
                   }}
                 />
               </Grid>
@@ -110,8 +128,11 @@ export default function Contact() {
                   multiline
                   rows={4}
                   value={contactForm.message}
-                  onChange={e => {
-                    setContactForm({...contactForm, message: e.target.value})
+                  onChange={(e) => {
+                    setContactForm({
+                      ...contactForm,
+                      message: e.target.value,
+                    });
                   }}
                 />
               </Grid>
@@ -134,5 +155,5 @@ export default function Contact() {
         </div>
       </Container>
     </div>
-  )
+  );
 }
